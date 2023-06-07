@@ -1,0 +1,21 @@
+{
+  "name": "fetch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:prod": "node server/server.js",
+    "start:dev": "concurrently \"cd server && npx nodemon server\" \"\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.1.0"
+  },
+  "dependencies": {
+    "if-env": "^1.0.4"
+  }
+}
